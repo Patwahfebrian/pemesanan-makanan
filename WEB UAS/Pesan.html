@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Makanan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Form Pemesanan</h1>
+  <form id="formPesan">
+    <label>Nama Pelanggan:<br><input type="text" id="nama" required></label><br>
+    <label>Jumlah Mie Setan:<br><input type="number" id="qty_mie_setan" min="0" value="0"></label><br>
+    <label>Jumlah Mie Iblis:<br><input type="number" id="qty_mie_iblis" min="0" value="0"></label><br>
+    <label>Jumlah Es Genderuwo:<br><input type="number" id="qty_es_genderuwo" min="0" value="0"></label><br>
+    <button type="button" onclick="hitungTotal()">Hitung Total</button>
+    <p>Total Harga: <span id="total"></span></p>
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+</body>
+</html>
